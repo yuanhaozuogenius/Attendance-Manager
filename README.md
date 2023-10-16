@@ -12,7 +12,7 @@
 
 2. pycharm 设置python virtual environment
 
-   ![image-20231016011741039](imgs\image-20231016011741039.png)
+   <img src="imgs\image-20231016011741039.png"  />
 3. 部署Django(if needed)
 
    `pip show Django`
