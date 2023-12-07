@@ -74,7 +74,7 @@
 
 <img src="imgs\image-20231016015044747.png" alt="image-20231016015044747" style="zoom:67%;" />
 
-### Django中遇到SQL相关问题处理方式
+### Django中遇到SQL相关问题处理
 
 #### 需要删表重建可以用zero命令或者sql command
 
@@ -86,6 +86,17 @@ DROP TABLE yourtablename;
    or
 
    `python manage.py migrate yourappname zero`
+
+#### 备份数据
+
+```python
+#导出数据
+python manage.py dumpdata yourappname.ModelName > data.json
+#导入数据
+python manage.py loaddata data.json
+```
+
+
 
    #### 调整新建表的字段顺序
 
